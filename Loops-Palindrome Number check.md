@@ -1,4 +1,4 @@
-## Loops in Python: Palindrome Number Checker
+# Loops in Python: Palindrome Number Checker
 
 ## 🎯 Aim
 To write a Python program that checks whether a given number is a **palindrome** using loops.
@@ -16,7 +16,23 @@ To write a Python program that checks whether a given number is a **palindrome**
    - Else, print that it is not a palindrome.
 
 ## 🧾 Program
-Add code Here
+```
+num=int(input())
+rev=0
+temp=num
+
+while temp>0:
+    rem=temp%10
+    rev=rev*10+rem
+    temp//=10
+    
+if rev==num:
+        print(f"The given number {num} is a Palindrome")
+else:
+        print(f"The given number {num} is not a palindrome")
+```
 ## Output
+<img width="1266" height="323" alt="image" src="https://github.com/user-attachments/assets/315592bf-f013-44ba-a718-7e988980fe01" />
 
 ## Result
+Thus, the python program was executed successfully
